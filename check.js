@@ -1,7 +1,7 @@
 
 let details=[{
-    name:"insha",
-    gmail:"inshakn@gmail.com"
+    name:"apoorva",
+    gmail:"apoorvab@gmail.com"
 } ]
 
 let new_user;
