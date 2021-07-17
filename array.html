@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>web assignment</title>
+</head>
+<body>
+
+
+    <script>
+    function sorting() {
+        let names = new Array("Fiat", "Austin", "Mercedes", "BMW", "Cupra");
+        res = names.sort();
+        alert(res);
+    }
+    
+    function checklen() {
+        let names = new Array("Fiat", "Austin", "Mercedes", "BMW", "Cupra");
+        res = names.length;
+        alert(res);
+    }
+    
+    function forloop() {
+        let text, fLen, i;
+        let names = new Array("Fiat", "Austin", "Mercedes", "BMW", "Cupra");
+        fLen = names.length;
+        text = "<ul>";
+        for (i = 0; i < fLen; i++) {
+            text += names[i];
+        }
+        text += "</ul>";
+        document.getElementById("f1").innerHTML = text;
+    }
+    
+    function foreachloop() {
+        let text, fLen, i;
+        let names = new Array("Fiat", "Austin", "Mercedes", "BMW", "Cupra");
+        fLen = names.length;
+      
+        text = "<ul>";
+        names.forEach(myFunction);
+        text += "</ul>";
+        document.getElementById("f2").innerHTML = text;
+    
+        function myFunction(value) {
+            text += "<li>" + value + "</li>";
+        }
+    }
+    
+    function convstr() {
+        let names = new Array("Fiat", "Austin", "Mercedes", "BMW", "Cupra");
+        str = names.toString();
+        alert(str);
+    
+    }
+    function popele() {
+        let names = new Array("Fiat", "Austin", "Mercedes", "BMW", "Cupra");
+        pop = names.pop();
+        alert(pop);
+    
+    }
+    function shiftele() {
+        let names = new Array("Fiat", "Austin", "Mercedes", "BMW", "Cupra");
+        shift = names.shift();
+        alert(shift);
+    
+    }
+    function unshif() {
+        let names = new Array("Fiat", "Austin", "Mercedes", "BMW", "Cupra");
+        unshift = names.unshift("Fiat", "Ford");
+        alert(names);
+    
+    }
+    </script>
+    <h2>Implementing array methods</h2>
+    <button onclick="sorting()">sort</button>
+    <button onclick="checklen()">lengthofArray</button></br>
+    <h2>for and for_each</h2>
+    <button onclick="forloop()">For</button>
+    <button onclick="foreachloop()">forEach</button>
+    <p id="f1"></p></br>
+    <p id="f2"></p>
+    <button onclick="convstr()">toString</button>
+    <button onclick="popele()">pop</button>
+    <button onclick="shiftele()">shift</button>
+    <button onclick="unshif()">unshift</button>
+
+    
+
+    <script src="arraymethod.js"></script>
+    
+</body>
+</html>
